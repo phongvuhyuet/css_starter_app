@@ -76,13 +76,67 @@
                     <div class="clear"></div>
                 </div>
             </div>
-            <div class="content-section">
-                <h1 class="section-header">
-                    TOUR DATES
-                </h1>
-                <p class="section-slogan">
-                    Remember to book your tickets!
-                </p>
+            <div class="tour-section">
+                <div class="content-section">
+                    <h1 class="section-header">
+                        TOUR DATES
+                    </h1>
+                    <p class="section-slogan">
+                        Remember to book your tickets!
+                    </p>
+                    <!-- places -->
+                    <ul class="places-list">
+                        <li class="place-item">
+                            <p class="time">September</p>
+                            <span class="sold-out text-white">Sold out</span>
+                        </li>
+                        <li class="place-item">
+                            <p class="time">October</p>
+                            <span class="sold-out text-white">Sold out</span>
+                        </li>
+                        <li class="place-item">
+                            <p class="time">Novemver</p>
+                            <span class="quantity">3</span>
+                        </li>
+                    </ul>
+                    <!-- citys -->
+                    <div class="citys">
+                        <div class="city"><img class="city-img" src="./assets/image/place1.jpg" alt="">
+                            <div class="city-body">
+                                <h3 class="city-title">New York</h3>
+                                <p class="city-time">Fri 27 Nov 2016</p>
+                                <p class="city-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+
+                                </p>
+                                <a href="#" class="city-btn">Buy Tickets</a>
+                            </div>
+                        </div>
+                        <div class="city"><img class="city-img" src="./assets/image/place2.jpg" alt="">
+                            <div class="city-body">
+                                <h3 class="city-title">Paris</h3>
+                                <p class="city-time">Sat 28 Nov 2016</p>
+                                <p class="city-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+
+                                </p>
+                                <a href="#" class="city-btn">Buy Tickets</a>
+
+                            </div>
+                        </div>
+                        <div class="city"><img class="city-img" src="./assets/image/place3.jpg" alt="">
+                            <div class="city-body">
+                                <h3 class="city-title">San Francisco</h3>
+                                <p class="city-time">Sun 29 Nov 2016</p>
+                                <p class="city-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+
+                                </p>
+                                <a href="#" class="city-btn">Buy Tickets</a>
+
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
             </div>
             <div class="content-section">
                 <h1 class="section-header">
@@ -91,9 +145,35 @@
                 <p class="section-slogan">
                     Fan? Drop a note!
                 </p>
+
+
             </div>
         </div>
         <div id="footer"></div>
+    </div>
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <div class="modal-header">
+                <i class="ti-bag modal-bag-icon">
+                </i>
+                Tickets
+            </div>
+            <div class="modal-content">
+                <label for="modal-quantity" class="modal-label"><i class="ti-shopping-cart"></i> Tickets, $15 per
+                    person</label>
+                <input name="quantity" class="modal-input" id="modal-quantity" placeholder="How many?">
+                <label for="email" class="modal-label"><i class="ti-email"></i> Send To</label>
+                <input type="email" name="email" id="modal-email" class="modal-input" placeholder="Enter email">
+                <button class="modal-button">Pay <i class="ti-check"></i></button>
+                <div class="modal-footer">
+                    Need <a href="#">help?</a>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 </body>
