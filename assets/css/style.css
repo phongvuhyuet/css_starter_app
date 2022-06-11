@@ -15,12 +15,45 @@ html {
 
 }
 
+/* common */
 .clear {
     clear: both;
 }
 
 .text-white {
     color: #fff !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.col-half {
+    float: left;
+    width: calc(100%/2);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    float: left;
+    width: calc(100%/3);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    float: left;
+    width: calc(100%/1);
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 #main {}
@@ -170,8 +203,6 @@ html {
 }
 
 #content .member-list .member-item {
-    width: calc(100% /3);
-    float: left;
     text-align: center;
 }
 
@@ -229,14 +260,10 @@ html {
 }
 
 .citys {
-    margin: 30px -8px 0;
+    margin-top: 30px;
+
 }
 
-.city {
-    float: left;
-    width: calc(100%/3);
-    padding: 0 8px;
-}
 
 .city-img {
     width: 100%;
@@ -281,18 +308,31 @@ html {
 
 .city-btn:hover {
     background-color: #939393;
+    border: 2px solid #939393;
     color: rgb(0, 0, 0);
 }
 
 /* Modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .modal {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-
-    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
     display: none;
     justify-content: center;
     align-items: center;
@@ -303,6 +343,7 @@ html {
 }
 
 .modal-container {
+    animation: fadeIn ease 0.5s;
     width: 900px;
     max-width: calc(100% - 32px);
     background-color: #fff;
@@ -382,6 +423,51 @@ html {
 
 .modal-footer a {
     color: #2196f3;
+}
+
+.contact-section {
+    margin-top: 16px;
+}
+
+.contact-detail p {
+    font-size: 18px;
+}
+
+.contact-detail i {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form input {
+    border: 1px solid #ccc;
+    padding: 11px 10px;
+}
+
+.contact-form .input-message {
+    margin-top: 8px
+}
+
+.contact-form input {
+    width: 100%;
+}
+
+.contact-form form div:last-child {
+    margin-top: 10px;
+}
+
+.contact-form button {
+    padding: 9px 15px;
+    color: #fff;
+    background-color: #000;
+    float: right;
+}
+
+.contact-form button:hover {
+    color: #000;
+    background-color: #ccc;
+    border: solid 2px #ccc;
+    float: right;
+    cursor: pointer;
 }
 
 /* footer section  */

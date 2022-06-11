@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/font/themify-icons/themify-icons.css">
+
 </head>
 
 <body>
@@ -60,20 +61,19 @@
                     enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat.
                 </p>
-                <div class="member-list">
-                    <div class="member-item">
+                <div class="member-list row">
+                    <div class="member-item col-third">
                         <p class="member-name">Name</p>
                         <img src="./assets/image/member1.jpg" alt="name">
                     </div>
-                    <div class="member-item">
+                    <div class="member-item col-third">
                         <p class="member-name">Name</p>
                         <img src="./assets/image/member1.jpg" alt="name">
                     </div>
-                    <div class="member-item">
+                    <div class="member-item col-third">
                         <p class="member-name">Name</p>
                         <img src="./assets/image/member1.jpg" alt="name">
                     </div>
-                    <div class="clear"></div>
                 </div>
             </div>
             <div class="tour-section">
@@ -100,40 +100,39 @@
                         </li>
                     </ul>
                     <!-- citys -->
-                    <div class="citys">
-                        <div class="city"><img class="city-img" src="./assets/image/place1.jpg" alt="">
+                    <div class="citys row">
+                        <div class="city col-third"><img class="city-img" src="./assets/image/place1.jpg" alt="">
                             <div class="city-body">
                                 <h3 class="city-title">New York</h3>
                                 <p class="city-time">Fri 27 Nov 2016</p>
                                 <p class="city-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
 
                                 </p>
-                                <a href="#" class="city-btn">Buy Tickets</a>
+                                <button class="city-btn">Buy Tickets</a>
                             </div>
                         </div>
-                        <div class="city"><img class="city-img" src="./assets/image/place2.jpg" alt="">
+                        <div class="city col-third"><img class="city-img" src="./assets/image/place2.jpg" alt="">
                             <div class="city-body">
                                 <h3 class="city-title">Paris</h3>
                                 <p class="city-time">Sat 28 Nov 2016</p>
                                 <p class="city-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
 
                                 </p>
-                                <a href="#" class="city-btn">Buy Tickets</a>
+                                <button class="city-btn">Buy Tickets</a>
 
                             </div>
                         </div>
-                        <div class="city"><img class="city-img" src="./assets/image/place3.jpg" alt="">
+                        <div class="city col-third"><img class="city-img" src="./assets/image/place3.jpg" alt="">
                             <div class="city-body">
                                 <h3 class="city-title">San Francisco</h3>
                                 <p class="city-time">Sun 29 Nov 2016</p>
                                 <p class="city-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
 
                                 </p>
-                                <a href="#" class="city-btn">Buy Tickets</a>
+                                <button class="city-btn">Buy Tickets</a>
 
                             </div>
                         </div>
-                        <div class="clear"></div>
                     </div>
                 </div>
 
@@ -145,7 +144,30 @@
                 <p class="section-slogan">
                     Fan? Drop a note!
                 </p>
+                <div class="row contact-section">
+                    <div class="col-half contact-detail">
+                        <p><i class="ti-location-pin"></i>Chicago, US</p>
+                        <p><i class="ti-mobile"></i>Phone: +00 151515
+                        </p>
+                        <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                    </div>
+                    <div class="col-half contact-form">
+                        <form class="row">
+                            <div class="col-half"><input type="text" name="name" placeholder="Name" class="input-name">
+                            </div>
+                            <div class="col-half">
+                                <input type="email" name="email" placeholder="Email" class="input-email">
+                            </div>
+                            <div class="col-full">
+                                <input type="text" name="message" placeholder="Message" class="input-message">
+                            </div>
+                            <div class="col-full">
+                                <button type="submit">SEND</button>
+                            </div>
+                        </form>
 
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -175,7 +197,7 @@
 
         </div>
     </div>
-
+    <script src="./assets/js/modal.js"></script>
 </body>
 
 </html>
