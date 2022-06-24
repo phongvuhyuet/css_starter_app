@@ -173,7 +173,7 @@ html {
     margin-top: var(--header-height);
     padding-top: 50%;
     position: relative;
-    background: url(/assets/image/slider1.jpg) top center / cover no-repeat;
+    background: url(../image/slider1.jpg) top center / cover no-repeat;
 
 }
 
@@ -194,6 +194,7 @@ html {
 
 #slider .text-content .text-description {
     font-weight: 500;
+    text-shadow: 0 0 2px #000;
 }
 
 #content {}
@@ -288,7 +289,6 @@ html {
 
 .citys {
     margin-top: 16px;
-
 }
 
 
@@ -332,6 +332,7 @@ html {
     margin-top: 8px;
     text-align: center;
     color: #fff;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -339,6 +340,7 @@ html {
     border: 2px solid #939393;
     color: rgb(0, 0, 0);
 }
+
 
 /* Modal */
 @keyframes fadeIn {
@@ -487,6 +489,7 @@ html {
     padding: 9px 15px;
     color: #fff;
     background-color: #000;
+    font-size: 17px;
     float: right;
 }
 
@@ -496,6 +499,15 @@ html {
     border: solid 2px #ccc;
     float: right;
     cursor: pointer;
+}
+
+.contact-detail a {
+    color: #0a06ef;
+    opacity: 0.8;
+}
+
+.contact-detail a:hover {
+    opacity: 1;
 }
 
 /* footer section  */

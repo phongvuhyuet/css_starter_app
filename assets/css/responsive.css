@@ -1,5 +1,5 @@
 /* mobile */
-@media (max-width: 740px) {
+@media (max-width: 46.1875em) {
 
     /* common */
     .s-full-width,
@@ -62,10 +62,10 @@
 }
 
 /* Tablet */
-@media (min-width: 741px) and (max-width: 1024px) {}
+@media (min-width: 46.25em) and (max-width: 63.9375em) {}
 
 /* Tablet and mobile */
-@media (max-width: 1024px) {
+@media (max-width: 63.9375em) {
     #subnav li a {
         line-height: 46px;
     }
